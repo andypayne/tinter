@@ -216,20 +216,3 @@
 
 
 
-; # TODO: There's obviously a more generic, reusable way to divide a range into
-; # n equal parts.
-; def divide_spectrum(n)
-;   color_list = Array.new
-;   n.times { |i|
-;     color_list.push(i*0xffffff/n + 0xffffff/(n*2))
-;   }
-;   return color_list
-; end 
-
-
-(defn -main
-  "I don't do a whole lot."
-  [& args]
-  (println "Hello, World!"))
-
-
