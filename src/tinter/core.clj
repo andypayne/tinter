@@ -222,9 +222,6 @@
     (for [i (range 0 360.0 step-size)]
       (hsl-to-rgb [i 1.0 0.5]))))
 
-;  (for [i (range 0 (* 2 PI) (/ (* 2 PI) n))]
-;    (hsl-to-rgb [(* 2 PI (mathfn/sin i)) 1.0 0.5])))
-
 
 (defn rgb-to-html [ls]
   (format "<div style=\"width:100px;height:100px;background:#%s\"></div>" (dec-to-hex-str ls)))
