@@ -1,4 +1,4 @@
-(defproject tinter "0.1.0-SNAPSHOT"
+(defproject tinter "0.1.1-SNAPSHOT"
   :description "Tinter is a color conversion and manipulation library for Clojure."
   :url "http://github.com/andypayne/tinter"
   :license {:name "Eclipse Public License"
