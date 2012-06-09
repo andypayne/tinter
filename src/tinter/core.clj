@@ -1,8 +1,12 @@
 (ns tinter.core
   (:require [clojure.string :as str]
+            [clojure.contrib.generic.math-functions :as mathfn]
             [clojure.math.numeric-tower :as math]))
 
 
+(def PI 3.141592654)
+
+ 
 (defn hex-str-to-dec
   "Convert hex RGB triples to decimal."
   [s]
@@ -211,8 +215,20 @@
       (hsl-to-rgb [h s i]))))
 
 
+(defn rgb-rainbow
+  "Return a rainbow of RGB colors with the given number of steps."
+  [steps]
+  (let [step-size (/ 360.0 steps)]
+    (for [i (range 0 360.0 step-size)]
+      (hsl-to-rgb [i 1.0 0.5]))))
+
+;  (for [i (range 0 (* 2 PI) (/ (* 2 PI) n))]
+;    (hsl-to-rgb [(* 2 PI (mathfn/sin i)) 1.0 0.5])))
+
+
 (defn rgb-to-html [ls]
   (format "<div style=\"width:100px;height:100px;background:#%s\"></div>" (dec-to-hex-str ls)))
+
 
 
 
