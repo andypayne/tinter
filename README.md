@@ -47,6 +47,8 @@ Tinter also provides a simple convenience function "rgb-to-html" to display colo
     ; ==> (<div style="width:100px;height:100px;background:#000000"></div> <div style="width:100px;height:100px;background:#320000"></div> <div style="width:100px;height:100px;background:#660000"></div> <div style="width:100px;height:100px;background:#990000"></div> <div style="width:100px;height:100px;background:#CC0000"></div> <div style="width:100px;height:100px;background:#FF0000"></div> <div style="width:100px;height:100px;background:#FF3232"></div> <div style="width:100px;height:100px;background:#FF6565"></div> <div style="width:100px;height:100px;background:#FF9898"></div> <div style="width:100px;height:100px;background:#FFCBCB"></div> <div style="width:100px;height:100px;background:#FFFEFE"></div>)
 ```
 
+<div style="width:100px;height:100px;background:#FF0000"></div> <div style="width:100px;height:100px;background:#FFBF00"></div> <div style="width:100px;height:100px;background:#7FFF00"></div> <div style="width:100px;height:100px;background:#00FF3F"></div> <div style="width:100px;height:100px;background:#00FFFF"></div> <div style="width:100px;height:100px;background:#003FFF"></div> <div style="width:100px;height:100px;background:#7F00FF"></div> <div style="width:100px;height:100px;background:#FF00BF"></div>
+
 
 ## License
 
