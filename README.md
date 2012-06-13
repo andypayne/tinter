@@ -49,6 +49,7 @@ The palettes file provides the ability to query COLOURlovers for a set of commun
 ```clojure
 (first (color-palettes-for [255 0 0]))
     ; ==> ((0 0 0) (255 0 0) (207 50 76) (45 139 66) (44 255 0))
+```
 
 ### HTML Convenience function
 
