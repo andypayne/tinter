@@ -41,6 +41,17 @@ Calculate the 30-degree split complementary colors for an RGB triple:
     ; ==> [(0.0 255.0 127.5) (0.0 127.5 255.0)]
 ```
 
+
+### Color palettes
+
+The palettes file provides the ability to query COLOURlovers for a set of community contributed color schemes featuring the given color. For example:
+
+```clojure
+(first (color-palettes-for [255 0 0]))
+    ; ==> ((0 0 0) (255 0 0) (207 50 76) (45 139 66) (44 255 0))
+
+### HTML Convenience function
+
 Tinter also provides a simple convenience function "rgb-to-html" to display colored blocks. The following code calculates a 10-step lightness gradation for the provided RGB triple, and prints a set of appropriately colored div elements:
 ```clojure
 (println (map rgb-to-html (rgb-gradation [255 0 0] 10)))
